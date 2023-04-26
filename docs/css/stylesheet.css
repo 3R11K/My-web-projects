@@ -1,0 +1,49 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkgray;
+}
+
+h1 {
+    color:darkslategrey;
+    text-align: center;
+}
+
+#top_of_page {
+    width: 100%;
+    background-color: cornflowerblue;
+}
+
+#Call {
+    text-align: center;
+}
+
+#logos_imgs {
+    display: flex;
+    justify-content: center;
+}
+
+#logos {
+    width: 20%;
+}
+
+#separador {
+
+    color: black;
+}
+
+.Project-button {
+    border: 0px;
+    background-color:midnightblue;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+    margin: 30px;
+    border-radius: 20px;
+    display: block;
+    transition: 0.5s;
+}
+
+.Project-button:hover {
+    background-color: rgb(13, 13, 59);
+    font-weight: bolder;
+}

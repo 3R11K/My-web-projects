@@ -1,0 +1,105 @@
+/*cabeçalho*/
+.header {
+    position: relative;
+    display: inline-block;
+    background-color: indigo;
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#home {
+    cursor: pointer;
+    background-color: rgb(87, 87, 168);
+    position:absolute;
+    border: 0px;
+    top:4px;
+    left: 2%;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+#home:hover {
+    background-color: rgb(53, 53, 104);
+}
+/*calculadora*/
+.bloco {
+    width: 380px;
+    height: 78%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.num {
+    margin: 1px;
+    position: relative;
+    bottom: 50px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: 0px;
+    color:white;
+    background-color: rgb(48, 48, 48);
+    float:inline-end;
+    border-radius: 100%;
+    width: 23%;
+    height: 16%;
+}
+
+.num:hover{
+    background-color:rgb(76, 75, 75) ;
+}
+
+.Operacao {
+    margin: 1px;
+    position: relative;
+    bottom: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: rgb(255, 184, 52);
+    border: 0px;
+    float:inline-end;
+    border-radius: 100%;
+    width: 23%;
+    height: 16%;
+}
+
+.Operacao:hover {
+    background-color:rgb(205, 148, 43) ;
+}
+
+.func {
+    margin: 1px;
+    position: relative;
+    bottom: 50px;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: gainsboro;
+    border: 0px;
+    float:inline-end;
+    border-radius: 100%;
+    width: 23%;
+    height: 16%;
+}
+
+.func:hover {
+    background-color: rgb(171, 171, 171);
+}
+
+#resultado {
+    height: 42px ;
+    bottom: 20px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gainsboro;
+    font-size: 40px;
+    text-align: right;
+    padding: 10px;
+}
