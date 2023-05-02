@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+</head>
+<body style="margin:0px">
+    <header>
+        <div id="logo_text_and_image"><img id= "logo"  src="imgs/bookmark-check-svgrepo-com.svg" alt="svg from: https://www.svgrepo.com/svg/513758/bookmark-check">Checklist</div>
+        <div id="header_buttons">
+            
+            <button>Pagina inicial</button>
+            <button>Sobre</button>
+            <button>Redes Sociais</button>
+        </div>
+    </header>
+
+    <section id="content">
+        <div class= "conteiner" id="todo">
+            <h1 class="top">TO DO</h1>
+            <div id="addingaskdiv">
+                <input type="text" placeholder="Adcione uma tarefa" id="AddTask">
+                <button id="AddButton" onclick="Add()">+</button>
+            </div>
+        </div>
+        <div class= "conteiner" id="doing">
+            <h1 class="top">DOING</h1>
+        </div>
+        <div class= "conteiner" id="finished">
+            <h1 class="top">FINISHED</h1>
+        </div>
+    </section>
+    
+</body>
+</html>

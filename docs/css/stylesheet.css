@@ -3,6 +3,14 @@ html {
     background-color: darkgray;
 }
 
+header {
+    display: block;
+}
+
+body {
+    margin: 0px 0px 0px 0px;
+}
+
 h1 {
     color:darkslategrey;
     text-align: center;
@@ -13,16 +21,25 @@ h1 {
     background-color: cornflowerblue;
 }
 
-#Call {
-    text-align: center;
-}
-
-#logos_imgs {
+#SuperiorMenu {
     display: flex;
     justify-content: center;
 }
 
+#SuperiorMenu button{
+    background-color: blue;
+    border-color: black;
+    border: solid 1px;
+}
+
+#SuperiorMenu button a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
 #logos {
+    justify-content: center;
     width: 20%;
 }
 
@@ -46,4 +63,8 @@ h1 {
 .Project-button:hover {
     background-color: rgb(13, 13, 59);
     font-weight: bolder;
+}
+
+#Call {
+    text-align: center;
 }

@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Braah One', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Braah+One&display=swap');
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: blue;
+}
+
+#logo {
+    height: 70px;
+    margin-left: 50px;
+}
+
+#logo_text_and_image{
+    font-weight: bolder;
+    width: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Braah One', sans-serif;
+}
+
+#header_buttons{
+    position: absolute;
+    right: 10px;
+    display: block
+}
+
+#header_buttons button{
+    display: inline;
+    border-radius: 5px;
+    flex-direction: row-reverse;
+    padding-right: 5px;
+    border: solid 10px;
+    border-color: blueviolet;
+    color: rgb(160, 160, 241);
+    background-color: blueviolet;
+}
+
+#content{
+    background-color: antiquewhite;
+    height: 98vh;
+    width: 99.1vw;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin-right: 40px;
+    height: 70vh;
+    width: 20vw;
+    background-color: whitesmoke;
+    border-radius: 40px;
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.15);
+}
+
+.top{
+    width: 20vw;
+    margin: 0;
+    padding: 12px;
+    font-family: 'Braah One', sans-serif;
+    text-align: center;
+    background-color: blue;
+}
+
+#addingaskdiv{
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+#AddTask{
+    height: 30px;
+    width: 15vw;
+    border: 2px solid gray;
+    border-radius: 7px;
+}
+
+#AddButton{
+    height: 30px;
+    width: 30px;
+}
+
+.taskCard{
+    margin:20px;
+    width: 18vw;
+    text-align: center;
+    background-color: red;
+    background-color: gainsboro;
+    border-radius: 40px;
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.15);
+}
