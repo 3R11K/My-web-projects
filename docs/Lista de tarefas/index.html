@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <script src="script.js"></script>
+    <script src="express.js"></script>
     <link rel="stylesheet" href="stylesheet.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,18 +14,27 @@
         <div id="logo_text_and_image"><img id= "logo"  src="imgs/bookmark-check-svgrepo-com.svg" alt="svg from: https://www.svgrepo.com/svg/513758/bookmark-check">Checklist</div>
         <div id="header_buttons">
             
-            <button>Pagina inicial</button>
+            <button><a href="../index.html">Pagina inicial</a></button>
             <button>Sobre</button>
             <button>Redes Sociais</button>
         </div>
     </header>
 
     <section id="content">
+        <div id="taskEditor">
+            <h1>ADD A TAKS</h1>
+            <div id="forInput">
+                <p>NAME THE TAKS</p>
+                <input type="text" id="nameTask">
+                <p style="margin-top: 20px;">DESCRIPTION</p>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                <button id="Input-button" onclick="Card(), insertTask()">ADD TASK</button>
+            </div>
+        </div>
         <div class= "conteiner" id="todo">
             <h1 class="top">TO DO</h1>
             <div id="addingaskdiv">
-                <input type="text" placeholder="Adcione uma tarefa" id="AddTask">
-                <button id="AddButton" onclick="Add()">+</button>
+                <button id="AddButton" onclick="Add()" alt="Adding task">+</button>
             </div>
         </div>
         <div class= "conteiner" id="doing">

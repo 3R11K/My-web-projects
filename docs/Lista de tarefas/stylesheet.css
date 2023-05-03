@@ -3,6 +3,10 @@
     src: url('https://fonts.googleapis.com/css2?family=Braah+One&display=swap');
 }
 
+body{
+    background-color: antiquewhite;
+}
+
 header{
     display: flex;
     align-items: center;
@@ -32,27 +36,41 @@ header{
     display: inline;
     border-radius: 5px;
     flex-direction: row-reverse;
-    padding-right: 5px;
-    border: solid 10px;
-    border-color: blueviolet;
+    height: 40px;
+    border:0px;
     color: rgb(160, 160, 241);
     background-color: blueviolet;
 }
 
+#header_buttons button:hover{
+    cursor: pointer;
+    border: 2px solid rgb(77, 24, 128);
+    transition: border 0.2s;
+}
+
+#header_buttons button a{
+    text-decoration: none;
+}
+
+#header_buttons button a:visited{
+    text-decoration: none;
+}
+
 #content{
-    background-color: antiquewhite;
-    height: 98vh;
-    width: 99.1vw;
+    width: 100%;
+    height: 100%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
 .conteiner{
+    margin-top: 30px;
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-items: center;
     overflow: hidden;
     margin-right: 40px;
     height: 70vh;
@@ -73,7 +91,6 @@ header{
 
 #addingaskdiv{
     position: absolute;
-    left: 15px;
     bottom: 15px;
 }
 
@@ -89,12 +106,88 @@ header{
     width: 30px;
 }
 
-.taskCard{
+.addingTaskCard{
+    background-color: antiquewhite;
+}
+#taskConteiner{
+    font-family: 'Braah One', sans-serif;
+    overflow: hidden;
+    font-size: 20px;
     margin:20px;
     width: 18vw;
     text-align: center;
     background-color: red;
     background-color: gainsboro;
-    border-radius: 40px;
+    border-radius: 20px;
     box-shadow: 2px 2px 5px rgb(0,0,0,0.15);
 }
+ 
+#taskCard{
+    font-family: 'Braah One', sans-serif;;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+#descriptionCard{
+    font-size: 10px;
+}
+
+#taskEditor{
+    overflow: hidden;
+    top: 80px;
+    position:absolute;
+    z-index: 2;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.15);
+    width: 0vw;
+    height: 80vh;
+    transition: width 0.2s;
+}
+
+#taskEditor h1{
+    font-family: 'Braah One', sans-serif;
+    padding: 7px;
+    margin:0;
+    text-align: center;
+    background-color: rgb(84, 84, 250);
+}
+
+#forInput p{
+    font-family: 'Braah One', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+#forInput{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#forInput input{
+    margin-left: 0px;
+    margin-top: 5px;
+    width: 62vw;
+    height: 30px;
+}
+
+#description{
+    display: flex;
+    justify-content: center;
+    width: 62vw;
+    height: 38vh;
+    margin-top: 5px;
+}
+
+#Input-button{
+    height: 40px;
+    border-radius: 10px;
+    border: solid 1px blue;
+    background-color: rgb(84, 84, 250);
+    margin-top: 14px;
+}
+
