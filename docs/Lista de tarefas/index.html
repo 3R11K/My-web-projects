@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+    <script src="./backend/node.js"></script>
     <script src="script.js"></script>
-    <script src="express.js"></script>
+    <script src=""></script>
     <link rel="stylesheet" href="stylesheet.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,10 +26,10 @@
             <h1>ADD A TAKS</h1>
             <div id="forInput">
                 <p>NAME THE TAKS</p>
-                <input type="text" id="nameTask">
+                <input type="text" name = "nameTask" id="nameTask">
                 <p style="margin-top: 20px;">DESCRIPTION</p>
-                <textarea name="description" id="description" cols="30" rows="10"></textarea>
-                <button id="Input-button" onclick="Card(), insertTask()">ADD TASK</button>
+                <textarea name="descriptionTask" id="description" cols="30" rows="10"></textarea>
+                <button id = "Input-button" onclick="verify()">ADD TASK</button>>
             </div>
         </div>
         <div class= "conteiner" id="todo">

@@ -191,3 +191,18 @@ header{
     margin-top: 14px;
 }
 
+#error{
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    height: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Braah One', sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    background-color: rgb(234, 18, 18);
+    border-radius: 10px;
+    border: solid brown;
+    transition: 0.2s heigth;
+}
