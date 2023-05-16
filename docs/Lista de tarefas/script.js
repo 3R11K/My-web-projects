@@ -9,6 +9,7 @@ function verify(){
     console.log(name, description)
     const xhr = new XMLHttpRequest;
     const url = "http://127.0.0.1:3031/verify/" + name;
+    console.log(url)
 
     xhr.open("GET",url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
@@ -16,7 +17,7 @@ function verify(){
         if(this.readyState === 4 && this.status === 200){
             console.log("succefuly connected")
             var res = JSON.parse(xhr.responseText);
-            console.log(res)
+            console.log(res);
 
             if(res.AddTask === true){
                 Card();
@@ -70,18 +71,14 @@ function error(){
 
     document.getElementById("content").appendChild(div);
 
-    var element = document.getElementById("error")
-
     element.style = "heigth:100px";
-
         
     setTimeout(function(){
         element.parentNode.removeChild(element);
         element.style = "heigth:0px";
     },4000);
-    
-
 }
+
 function DB(name, description){
 
     var data = {nameTask: name,

@@ -30,18 +30,18 @@ app.get("/verify/:name", function(req,res){
     var checkName;
     var checkDescription;
 
-    const nameTask = req.params.name;
+var nameTask = req.params.name;
 
-    console.log(nameTask)
-
-    db.all(`SELECT * FROM NAME_TODO WHERE NAME = ${nameTask}`, function(err,row){
+    db.all(`SELECT * FROM NAME_TODO WHERE NAME = '${nameTask}'`, function(err,row){
+        if(err){
+            throw err
+        }
         if(row){
             res.json({AddTask:false});
         }
         else{
             res.json({AddTask:true});
         }
-        console.log(row)
     })
 });
 
