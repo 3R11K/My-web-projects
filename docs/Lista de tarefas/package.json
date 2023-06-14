@@ -1,0 +1,16 @@
+{
+    "name": "to-do-list",
+    "version": "1.0.0",
+    "description": "Descrição do seu projeto",
+    "main": "./backend/node.js",
+    "scripts": {
+      "start": "node ./backend/node.js"
+    },
+    "author": "Seu Nome",
+    "license": "no license",
+    "dependencies": {
+      "express": "^4.17.1",
+      "body-parser": "^1.19.0",
+      "sqlite3": "^5.0.2"
+    }
+  }
